@@ -5,8 +5,8 @@ import contact from "./contact.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/router";
 import { buttonVariants } from "../../pages/courses/[courseId]";
-import Link from "next/link";
 
 const ContactUs = () => {
   const [sending, setSending] = useState(false);
@@ -17,6 +17,8 @@ const ContactUs = () => {
     subject: "",
     message: "",
   });
+
+  const router = useRouter();
 
   const updateName = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFormValues((form) => {
@@ -177,16 +179,15 @@ const ContactUs = () => {
               Sending.....
             </button>
           )}
-          <Link href="https://wa.link/7eplda" target="_blank" legacyBehavior>
-            <motion.a
-              variants={buttonVariants}
-              whileHover="hover"
-              className="text-white cursor-pointer bg-green-500 h-10 text-sm flex items-center justify-around w-fit p-3 rounded-tl-xl rounded-tr-xl rounded-br-xl mt-10 hover:bg-green-700"
-            >
-              <WhatsApp className="mr-4" />
-              Message us on whatsApp
-            </motion.a>
-          </Link>
+          <motion.a
+            onClick={() => router.push("https://wa.link/7eplda")}
+            variants={buttonVariants}
+            whileHover="hover"
+            className="text-white cursor-pointer bg-green-500 h-10 text-sm flex items-center justify-around w-fit p-3 rounded-tl-xl rounded-tr-xl rounded-br-xl mt-10 hover:bg-green-700"
+          >
+            <WhatsApp className="mr-4" />
+            Message us on whatsApp
+          </motion.a>
         </form>
         <div className="basis-1/2 flex justify-center">
           <Image src={contact} alt="contact" height={300} width={500} />

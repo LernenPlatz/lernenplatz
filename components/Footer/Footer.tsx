@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <Phone />
-          <p className="ml-2 text-black">+2347067050605</p>
+          <p className="ml-2 text-black">+2347058144934</p>
         </div>
         <div className="footer-contact">
           <Email />

@@ -84,7 +84,7 @@ const Service = () => {
                   <p className="font-bold text-xl">{s.name}</p>
                 </div>
                 <h3 className="font-bold text-sm font-sora my-2">
-                  {s.level} - {s.duration}
+                  {s.level ? s.level + ` -` : '' }  {s.duration}
                 </h3>
                 <h1 className="text-justify">
                   {s.details.substr(0, 150) + "...."}

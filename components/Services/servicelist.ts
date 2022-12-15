@@ -34,7 +34,6 @@ export const serviceList = [
     {
         name:'EX',
         title:'Exam Preparatory Class',
-        level:'Hard',
         duration:'3 weeks',
         details:'This is the class to help you prepare for your upcoming exams and will cover varieties of topics in a short period of time', 
         price:'As Negotiated',
@@ -43,7 +42,6 @@ export const serviceList = [
     {
         name:'LC',
         title:'Learn Through Course',
-        level:'Hard',
         duration:'Monthly',
         details:'This is a step by step monthly course designed for people who are interested in learning the language for a long period of time(not based on proficiency levels)e.g school children', 
         price:'30,000',

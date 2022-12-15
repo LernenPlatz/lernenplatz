@@ -39,10 +39,10 @@ const CourseId = () => {
             <p className="ml-2"> - {courseDetails?.title}</p>
           </div>
         )}
-        <div className="mb-8  flex ">
+      {courseDetails?.level &&  <div className="mb-8  flex ">
           <p className="text-xl font-bold font-sora">Level </p>{" "}
           <p className="ml-2"> - {courseDetails?.level}</p>
-        </div>
+        </div>}
         <div className="mb-8  flex ">
           <p className="text-xl font-bold font-sora">Price </p>{" "}
           <p className="ml-2"> - &#8358; {courseDetails?.price} </p>{" "}

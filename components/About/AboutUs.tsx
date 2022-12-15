@@ -29,7 +29,7 @@ const AboutUs = () => {
             We are a German language teaching institution based in Nigeria
           </p>
           <p className="mb-3 font-sora text-lg text-justify md:w-3/4">
-            Our goal is to help people learn and understand the german language
+            Our goal is to help people learn and understand the German language
             as fast and easy as possible.
           </p>
           <p className="mb-3 font-sora text-lg text-justify md:w-3/4">

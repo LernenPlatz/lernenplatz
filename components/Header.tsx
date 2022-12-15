@@ -35,7 +35,7 @@ const Header = () => {
           transition={{ delay: 0.7 }}
           className="text-xl md:w-2/3  mt-8 font-sora "
         >
-          We are a language teaching firm that teaches foreign languages and
+          We are a language teaching institution that teaches foreign languages and
           guide people through different parts in which their learning goals can
           be actualized.
         </motion.p>
